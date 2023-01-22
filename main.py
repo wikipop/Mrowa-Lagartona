@@ -16,7 +16,7 @@ def main(n, ants_n) -> None:
     :param ants_n: Ilość mrówek
     """
 
-    cords = [[random.randint(0, 9), random.randint(0, 9)] for x in range(ants_n)]
+    cords = {(random.randint(0, 9), random.randint(0, 9)) for x in range(ants_n)}
 
     if len(cords) != ants_n:
         main(n, ants_n)
